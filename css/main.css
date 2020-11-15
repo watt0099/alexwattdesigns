@@ -610,3 +610,12 @@ a .fab:hover{
   color: #fff;
   text-decoration: none;
 }
+
+@media (max-width: 400px){
+  .portfolioContent, .contactContent, .header, .aboutContent{
+    height: 100vh;
+  }
+
+  .indexFooter{
+    font-size: 1rem;
+  }
