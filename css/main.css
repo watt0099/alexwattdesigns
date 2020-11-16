@@ -613,7 +613,7 @@ a .fab:hover{
 
 @media (max-width: 400px){
   .portfolioContent, .contactContent, .header, .aboutContent{
-    height: 100vh;
+    height: 1000px;
   }
 
   .indexFooter{
