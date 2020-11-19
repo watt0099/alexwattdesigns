@@ -47,10 +47,11 @@ p{
   height: 0;
 }
 
-.portfolioContent, .aboutContent, .contactContent{
+.portfolioContent, .aboutContent, .contactContent, .header{
   background-color: #141414;
-    width: 100%;
+  width: 100%;
   height: 100vh;
+  min-height: -webkit-fill-available;
   position: relative;
   margin: 0;
 }
@@ -65,7 +66,7 @@ p{
 }
 .navbar {
   background:#CF9625;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .indexNavbar {
@@ -373,8 +374,8 @@ button{
   visibility: hidden;
   outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
   -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+  -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+  transform: rotate3d(0,0,1,-60deg) skewY(30deg);
 }
 .hexIn * {
   position: absolute;
@@ -382,15 +383,15 @@ button{
   outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
 }
 .hexLink {
-    display:block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
-    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+  display:block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+  -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+  transform: skewY(-30deg) rotate3d(0,0,1,60deg);
 }
 
 /*** HEX CONTENT **********************************************************************/
@@ -401,8 +402,8 @@ button{
   height: 100%;
   margin: 0 auto;
   -webkit-transform: rotate3d(0,0,0,0deg);
-      -ms-transform: rotate3d(0,0,0,0deg);
-          transform: rotate3d(0,0,0,0deg);
+  -ms-transform: rotate3d(0,0,0,0deg);
+  transform: rotate3d(0,0,0,0deg);
 }
 
 .hex h1{
@@ -414,7 +415,7 @@ button{
   text-shadow: 2px 2px 2px rgba(66,28,18,0.61);
   font-weight: 300;
   -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
-          transition:          transform .2s ease-out, opacity .3s ease-out;
+  transition:          transform .2s ease-out, opacity .3s ease-out;
 }
 .hex h1 {
   bottom: 50%;
@@ -422,8 +423,8 @@ button{
   font-size: 1.5em;
   z-index: 1;
   -webkit-transform:translate3d(0,-100%,0);
-      -ms-transform:translate3d(0,-100%,0);
-          transform:translate3d(0,-100%,0);
+  -ms-transform:translate3d(0,-100%,0);
+  transform:translate3d(0,-100%,0);
 }
 .hex h1::after {
   content: '';
@@ -440,8 +441,8 @@ button{
 /*** HOVER EFFECT  **********************************************************************/
 .hexLink:hover h1, .hexLink:focus h1{
   -webkit-transform:translate3d(0,0,0);
-      -ms-transform:translate3d(0,0,0);
-          transform:translate3d(0,0,0);
+  -ms-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0);
 }
 
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
@@ -495,11 +496,11 @@ button{
 }
 
 @media (max-width: 400px) {
-    #hexGrid {
-        font-size: 13px;
-        margin-bottom: 11.2%;
-        height: 500px;
-    }
+  #hexGrid {
+    font-size: 13px;
+    margin-bottom: 11.2%;
+    height: 500px;
+  }
 }
 
 /*END HEXGRID*/
@@ -612,12 +613,14 @@ a .fab:hover{
   text-decoration: none;
 }
 
-@media (max-width: 400px){
-  .portfolioContent,.contactContent,.header,.aboutContent{
-   min-height: 100vh;
-  min-height: -webkit-fill-available;
+@media screen and (max-width: 400px){
+  .spacing{
+    display:none;
   }
 
-  .indexFooter{
-    font-size: 1rem;
+  .indexFooter p{
+    font-size: .6rem;
+    text-align: center;
   }
+
+}
