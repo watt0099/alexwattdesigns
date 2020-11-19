@@ -614,7 +614,8 @@ a .fab:hover{
 
 @media (max-width: 400px){
   .portfolioContent,.contactContent,.header,.aboutContent{
-    height: 1000px;
+   min-height: 100vh;
+  min-height: -webkit-fill-available;
   }
 
   .indexFooter{
