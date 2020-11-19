@@ -624,6 +624,10 @@ a .fab:hover{
     display:none;
   }
 
+  .vanta-canvas{
+    height: 100%;
+  }
+	
   .indexFooter p{
     font-size: .6rem;
     text-align: center;
