@@ -624,7 +624,7 @@ a .fab:hover{
     display:none;
   }
 
-  .vanta-canvas{
+  canvas{
     height: 100%;
   }
 	
