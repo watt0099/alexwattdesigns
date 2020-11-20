@@ -73,7 +73,7 @@ p{
             left: 0;
             right: 0;
             bottom: 0;
-  min-height: -webkit-fill-available;
+  min-height: 1136px;
   position: fixed;
   margin: 0;
 }
