@@ -644,7 +644,8 @@ a .fab:hover{
 	
   .indexFooter p{
     font-size: .6rem;
-    text-align: center;
+    text-align: left;
+    margin: none;
   }
 
 }
