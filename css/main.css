@@ -637,15 +637,11 @@ a .fab:hover{
   .spacing{
     display:none;
   }
-
-  canvas{
-    height: 100%;
-  }
 	
   .indexFooter p{
     font-size: .6rem;
     text-align: left;
-    margin: none;
+    margin: 0;
   }
 
 }
